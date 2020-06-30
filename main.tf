@@ -1,10 +1,10 @@
 terraform {
   backend "remote" {
     hostname = "tfe.markieta.io"
-    organization = "dev"
+    organization = "prod"
 
     workspaces {
-      name = "vnet-nonprod"
+      name = "vnet-prod"
     }
   }
 }
