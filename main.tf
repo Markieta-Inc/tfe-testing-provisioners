@@ -1,5 +1,5 @@
-resource "null_resource" "python1" {
+resource "null_resource" "hello" {
   provisioner "local-exec" {
-    command = "python3 -c 'import ldap3'"
+    command = "echo Hello World!"
   }
 }
